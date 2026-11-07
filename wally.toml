@@ -1,0 +1,14 @@
+[package]
+name = "maneetoo/luaucolors"
+description = "Make your Luau output messages 🎨 colorful with support for ANSI colors."
+version = "0.1.0"
+license = "MIT"
+authors = ["maneetoo"]
+registry = "https://github.com/UpliftGames/wally-index"
+repository = "https://github.com/maneetoo/luaucolors"
+realm = "shared"
+
+[dependencies]
+Number = "maneetoo/number@2.0.0"
+Object = "maneetoo/object@2.0.0"
+String = "maneetoo/string@2.0.0"

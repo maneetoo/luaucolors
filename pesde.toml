@@ -1,0 +1,21 @@
+name = "maneetoo/luaucolors"
+version = "0.1.1"
+description = "Make your Luau output messages 🎨 colorful with support for ANSI colors."
+authors = ["maneetoo"]
+repository = "https://github.com/maneetoo/luaucolors"
+license = "MIT"
+
+includes = [
+  "pesde.toml",
+  "README.md",
+  "LICENSE",
+  "src/**/*.luau",
+]
+
+[target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
+
+[indices]
+default = "https://github.com/pesde-pkg/index"

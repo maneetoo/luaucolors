@@ -1,0 +1,36 @@
+[tools]
+"github:JohnnyMorganz/luau-lsp" = "latest"
+"github:Kampfkarren/selene" = "latest"
+"github:UpliftGames/wally" = "latest"
+"github:lune-org/lune" = "latest"
+"github:pesde-pkg/pesde" = "latest"
+"github:rojo-rbx/rojo" = "latest"
+luau = "latest"
+
+[tasks]
+
+[tasks.lint]
+description = "Lint .luau files via `Selene`"
+run = "selene ."
+
+[tasks.test]
+description = "Run the `tests/` suite via `Lune`"
+run = "lune run tests/run"
+
+[tasks.build]
+description = "Build .rbxm file & run `lint`"
+depends = ["lint"]
+run = "rojo build -o build.rbxm"
+
+[tasks.buildx]
+description = "Build .rbxlx file & run `lint`"
+depends = ["lint"]
+run = "rojo build -o build.rbxlx"
+
+[tasks.serve]
+description = "Serve local server via `Rojo` to replecate `default.project.json`"
+run = "rojo serve"
+
+[tasks.serve-test]
+description = "Serve local server via `Rojo` to replecate `test.project.json`"
+run = "rojo serve test.project.json"

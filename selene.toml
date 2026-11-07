@@ -1,0 +1,5 @@
+std="luau"
+
+[rules]
+multiple_statements = "allow"
+bad_string_escape = "allow"
