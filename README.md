@@ -14,7 +14,8 @@ Make your Luau output messages 🎨 colorful with support for ANSI colors.
 ```luau
 const luaucolors = require './luaucolors'
 
-
+print(luaucolors.red 'Its will be red')
+print(luaucolors.yellow 'Its will be yellow')
 ```
 
 ## Attribution
